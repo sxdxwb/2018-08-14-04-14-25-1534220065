@@ -1,4 +1,11 @@
-module.exports = function main() {
-    console.log("Debug Info");
-    return 'Hello World!';
+module.exports = function main(num) {
+    var my_lights = ['._.', '...', '._.', '._.', '...', '._.', '._.', '._.', '._.', '._.',
+        '|.|', '..|', '._|', '._|', '|_|', '|_.', '|_.', '..|', '|_|', '|_|',
+        '|_|', '..|', '|_.', '._|', '..|', '._|', '|_|', '..|', '|_|', '..|]'];
+    for(var i = 0; i < num.length; i++){
+        for(var j =0;j<3;j++)
+        {
+            console.log(my_lights[i+j*10]);
+        }
+    }
 };
